@@ -1,0 +1,104 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    color: #444;
+}
+
+/* display flex --> lado ao lado
+justify-content --> ajusta o alinhamento
+text-decoration --> tira o underline
+ display: inline-block para o padding funcionar
+*/
+
+/*Sempre utilizar este estilo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*classe de serviço para alinhar/centralizar pode ser
+ pixels ou porcentagem o width*/
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*vh -- percentual do componente disponivel*/
+header {
+  /*  background-color: orangered;*/
+    height: 100vh;
+    position: relative;
+
+    /*Configurar imagem e forma que ela deve se comportar
+    */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./food/woman.jpg);
+    background-size: cover;
+
+    color: #fff;
+    padding-top: 32px;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+ /*   background-color: green;*/
+
+}
+
+.header-container {
+    width: 960px;
+        position: absolute;
+    /*Em relação ao tamanho do PAI - que o header
+    deixado em relative*/
+    left: 50%;
+    top: 50%;
+    /*Em relação ao tamanho elemento. Dessa forma, ele
+    fica no meio da tela*/
+    transform: translate(-50%, -50%);
+   /* background-color: violet;
+
+   text-align: center;*/
+
+}
+
+.header-container-inner{
+    width: 50%;
+ /*   background-color: cadetblue;*/
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+    line-height: 1.05;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+    background-color: #e67e22;
+    padding: 16px 32px;
+    border-radius: 9px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+}
+
+section {
+    padding: 96px 0;
+}
